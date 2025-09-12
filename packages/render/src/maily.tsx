@@ -496,10 +496,31 @@ export class Maily {
       <Html {...htmlProps}>
         <Head>
           <Font {...fontOptions} />
-
           <style
             dangerouslySetInnerHTML={{
-              __html: `blockquote,h1,h2,h3,img,li,ol,p,ul{margin-top:0;margin-bottom:0}@media only screen and (max-width:425px){.tab-row-full{width:100%!important}.tab-col-full{display:block!important;width:100%!important}.tab-pad{padding:0!important}}`,
+              __html: `
+      blockquote, h1, h2, h3, img, li, ol, p, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .tab-row-full {
+          width: 100% !important;
+        }
+        .tab-col-full {
+          display: block !important;
+          width: 100% !important;
+        }
+        .tab-pad {
+          padding: 0 !important;
+        }
+        .responsive-img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+    `,
             }}
           />
           {tags}
@@ -1172,18 +1193,21 @@ export class Maily {
     const imageHeight = height === 'auto' ? 'auto' : Number(height);
     const heightStyle = imageHeight === 'auto' ? 'auto' : `${imageHeight}px`;
 
+// In der Methode private image(...)
+
     const mainImage = (
       <Img
+        className="responsive-img"
         alt={alt || title || 'Image'}
         src={src}
         style={{
-          width: widthStyle, // Use the calculated width
-          height: heightStyle, // Use the calculated height
-          maxWidth: '100%', // Ensure image doesn't overflow container
+          width: widthStyle,
+          height: heightStyle,
+          maxWidth: '100%',
           outline: 'none',
           border: 'none',
           textDecoration: 'none',
-          display: 'block', // Prevent unwanted spacing
+          display: 'block',
           borderRadius,
         }}
         title={title || alt || 'Image'}
