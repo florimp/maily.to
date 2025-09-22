@@ -28,12 +28,12 @@ import juice from 'juice';
 import type {
     FontProps,
     RendererThemeOptions as ThemeOptions,
-} from '@maily-to/shared';
+} from '@florimp/shared';
 import {
     DEFAULT_RENDERER_THEME as DEFAULT_THEME,
     DEFAULT_FONT,
     DEFAULT_LINK_TEXT_COLOR,
-} from '@maily-to/shared';
+} from '@florimp/shared';
 import {Preheader} from './preheader';
 
 interface NodeOptions {

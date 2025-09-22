@@ -10,9 +10,9 @@
     "generate:meta": "tsx ./app/scripts/generate-metadata-files.ts"
   },
   "dependencies": {
-    "@maily-to/core": "workspace:*",
-    "@maily-to/render": "workspace:*",
-    "@maily-to/shared": "workspace:*",
+    "@florimp/core": "workspace:*",
+    "@florimp/render": "workspace:*",
+    "@florimp/shared": "workspace:*",
     "@radix-ui/react-dialog": "^1.1.6",
     "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-popover": "^1.1.6",

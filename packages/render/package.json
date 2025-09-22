@@ -48,7 +48,7 @@
   "devDependencies": {
     "@antfu/utils": "^9.2.0",
     "@babel/preset-react": "^7.27.1",
-    "@maily-to/shared": "workspace:*",
+    "@florimp/shared": "workspace:*",
     "@tiptap/core": "^2.11.5",
     "@types/react": "^19.1.10",
     "tsconfig": "workspace:*",

@@ -1,5 +1,5 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { Editor } from '@maily-to/core';
+import { Editor } from '@florimp/core';
 import { cn } from '~/lib/classname';
 import defaultEmailJSON from '~/lib/default-editor-json.json';
 import {
@@ -26,7 +26,7 @@ import {
   type EditorThemeOptions,
   type FallbackFont,
   type FontFormat,
-} from '@maily-to/shared';
+} from '@florimp/shared';
 import type { Editor as TiptapEditor } from '@tiptap/core';
 import { useMutation } from '@tanstack/react-query';
 import { httpPost } from '~/lib/http';
