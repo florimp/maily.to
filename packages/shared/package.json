@@ -1,6 +1,6 @@
 {
   "name": "@florimp/shared",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "private": false,
   "description": "Shared utilities for Maily",
   "sideEffects": false,
